@@ -14,6 +14,18 @@
         <form id="job-application-form" action="#">
             <h1>Red River College Job Registration Form</h1>
             <fieldset>
+                <legend>Job to Apply for</legend>
+                <label for="jobs">Choose a job:</label>
+                <select name="jobs" id="jobs">
+                    <option value="" disabled selected hidden></option>
+                    <option value="software-developer">Software Developer</option>
+                    <option value="business-analyst">Business Analyst</option>
+                    <option value="cybersecurity">Cybersecurity Specialist</option>
+                    <option value="project-manager">Project Manager</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
                 <legend>Type of Job Modality</legend>
                 <input type="checkbox" id="modality-in-person" name="modality" value="in-person" />
                 <label for="modality-in-person">In-Person</label>
