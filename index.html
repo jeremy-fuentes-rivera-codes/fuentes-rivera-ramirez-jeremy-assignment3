@@ -14,6 +14,16 @@
         <form id="job-application-form" action="#">
             <h1>Red River College Job Registration Form</h1>
             <fieldset>
+                <legend>Type of Job Modality</legend>
+                <input type="checkbox" id="modality-in-person" name="modality" value="in-person" />
+                <label for="modality-in-person">In-Person</label>
+                <input type="checkbox" id="modality-remote" name="modality" value="remote" />
+                <label for="modality-remote">Remote</label>
+                <input type="checkbox" id="modality-hybrid" name="modality" value="hybrid" />
+                <label for="modality-hybrid">Hybrid</label>
+            </fieldset>
+
+            <fieldset>
                 <legend>Personal Information</legend>
                 <div class="form-field">
                     <label for="fname">First Name:</label>
@@ -32,6 +42,14 @@
                     <input type="text" id="email" name="email"/>
                     <div class="error" id="email_error">* Please enter a valid email with an @ symbol.</div>
                 </div>
+            </fieldset>
+
+            <fieldset> 
+                <legend>Have you worked here before?</legend>
+                <input type="radio" id="worked-here-yes" name="worked-here" value="yes"/>
+                <label for="worked-here-yes">Yes</label>
+                <input type="radio" id="worked-here-no" name="worked-here" value="no"/>
+                <label for="worked-here-no">No</label>
             </fieldset>
 
             <button type="submit">Register</button>
