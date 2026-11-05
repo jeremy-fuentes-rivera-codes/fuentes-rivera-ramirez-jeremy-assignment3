@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <main>
+        <form id="job-application-form" action="#">
+            <h1>Red River College Job Registration Form</h1>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-field">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname"/>
+                    <div class="error" id="fname_error">* Please enter your first name.</div>
+                </div>
+
+                <div class="form-field">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" />
+                    <div class="error" id="lname_error">* Please enter your last name.</div>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email"/>
+                    <div class="error" id="email_error">* Please enter a valid email with an @ symbol.</div>
+                </div>
+            </fieldset>
+
+            <button type="submit">Register</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Job Application Form. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
