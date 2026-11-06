@@ -51,7 +51,7 @@
 
                 <div class="form-field">
                     <label for="email">Email:</label>
-                    <input type="text" id="email" name="email"/>
+                    <input type="email" id="email" name="email"/>
                     <div class="error" id="email_error">* Please enter a valid email with an @ symbol.</div>
                 </div>
 
@@ -68,6 +68,28 @@
                 <label for="worked-here-yes">Yes</label>
                 <input type="radio" id="worked-here-no" name="worked-here" value="no"/>
                 <label for="worked-here-no">No</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Experience</legend>
+                <div class="form-field">
+                    <label for="job-title">Last job you worked at</label>
+                    <input type="text" id="job-title" name="job-title"/>
+                </div>
+
+                <div class="form-field">
+                    <label for="job-years">Years of experience in your field</label>
+                    <input type="number" id="job-years" name="job-years"/>
+                </div>
+
+                <div class="form-field">
+                    <label for="job-description">Describe your relevant experience</label><br />
+                    <textarea id="job-description" name="job-description" rows="8" cols="45"></textarea>
+                </div>
+            </fieldset>
+                
+            <fieldset>
+                
             </fieldset>
 
             <button type="submit">Register</button>
