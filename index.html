@@ -17,12 +17,13 @@
                 <legend>Job to Apply for</legend>
                 <label for="jobs">Choose a job:</label>
                 <select name="jobs" id="jobs">
-                    <option value="" disabled selected hidden></option>
+                    <option value="" disabled selected hidden>Select a job</option>
                     <option value="software-developer">Software Developer</option>
                     <option value="business-analyst">Business Analyst</option>
                     <option value="cybersecurity">Cybersecurity Specialist</option>
                     <option value="project-manager">Project Manager</option>
                 </select>
+                <div class="error" id="jobs-error">* Please choose a job.</div>
             </fieldset>
 
             <fieldset>
@@ -33,6 +34,7 @@
                 <label for="modality-remote">Remote</label>
                 <input type="checkbox" id="modality-hybrid" name="modality" value="hybrid" />
                 <label for="modality-hybrid">Hybrid</label>
+                <div class="error" id="modality-error">* Please choose at least one modality.</div>
             </fieldset>
 
             <fieldset>
@@ -40,25 +42,25 @@
                 <div class="form-field">
                     <label for="fname">First Name:</label>
                     <input type="text" id="fname" name="fname"/>
-                    <div class="error" id="fname_error">* Please enter your first name.</div>
+                    <div class="error" id="fname-error">* Please enter your first name.</div>
                 </div>
 
                 <div class="form-field">
                     <label for="lname">Last Name:</label>
                     <input type="text" id="lname" name="lname" />
-                    <div class="error" id="lname_error">* Please enter your last name.</div>
+                    <div class="error" id="lname-error">* Please enter your last name.</div>
                 </div>
 
                 <div class="form-field">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email"/>
-                    <div class="error" id="email_error">* Please enter a valid email with an @ symbol.</div>
+                    <div class="error" id="email-error">* Please enter a valid email with an @ symbol.</div>
                 </div>
 
                 <div class="form-field">
                     <label for="phone">Phone Number:</label>
                     <input type="tel" id="phone" name="phone" maxlength="10"/>
-                    <div class="error" id="phone_error">* Please enter a valid phone number.</div>
+                    <div class="error" id="phone-error">* Please enter a valid phone number.</div>
                 </div>
             </fieldset>
 
@@ -68,6 +70,7 @@
                 <label for="worked-here-yes">Yes</label>
                 <input type="radio" id="worked-here-no" name="worked-here" value="no"/>
                 <label for="worked-here-no">No</label>
+                <div class="error" id="worked-here-error">* Please select an option.</div>
             </fieldset>
 
             <fieldset>
@@ -75,23 +78,21 @@
                 <div class="form-field">
                     <label for="job-title">Last job you worked at</label>
                     <input type="text" id="job-title" name="job-title"/>
+                    <div class="error" id="job-title-error">* Please enter your last job.</div>
                 </div>
 
                 <div class="form-field">
                     <label for="job-years">Years of experience in your field</label>
                     <input type="number" id="job-years" name="job-years"/>
+                    <div class="error" id="job-years-error">* Please enter your years of experience.</div>
                 </div>
 
                 <div class="form-field">
                     <label for="job-description">Describe your relevant experience</label><br />
                     <textarea id="job-description" name="job-description" rows="8" cols="45"></textarea>
+                    <div class="error" id="job-description-error">* Please describe your experience.</div>
                 </div>
             </fieldset>
-                
-            <fieldset>
-                
-            </fieldset>
-
             <button type="submit">Register</button>
         </form>
     </main>
