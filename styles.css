@@ -1,0 +1,140 @@
+html,
+body,
+h1,
+form,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+}
+
+/* Implemented to hide elements later */
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: 'Google Sans', Arial, Helvetica, sans-serif;
+    padding: 1em;
+    background-color: #5b4a9b;
+    color: #ffffff;             
+    font-size: 1.125em;
+    line-height: 1.5em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+form {
+    width: 100%;
+    max-width: 640px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #1f2933;
+    border-radius: 8px;
+    padding: 1.5em;
+}
+
+form h1 {
+    font-size: 1.5em;
+    color: #5b4a9b;
+    text-align: center;
+    margin-bottom: 0.75em;
+}
+
+form fieldset {
+    border: none;
+    border-bottom: 1px solid #d9d3ee;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+form fieldset:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+form legend {
+    color: #5b4a9b;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+form label {
+    font-weight: bold;
+}
+
+.form-field {
+    margin-bottom: 0.75em;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="number"],
+form select,
+form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.6em;
+    font-size: 1em;
+    font-family: 'Google Sans', Arial, Helvetica, sans-serif;
+    color: #1f2933;
+    background-color: #ffffff;
+    border: 2px solid #767676;
+    border-radius: 4px;
+}
+
+form .option {
+	font-weight: normal;
+	margin-right: 1em;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: 3px solid #5b4a9b;
+    outline-offset: 2px;
+}
+
+form .error {
+    color: #b00020;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 0.25em;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 0.8em 2em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #1b1b1b;
+    background-color: #f28c28;
+    border: 2px solid #1b1b1b;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 3px solid #5b4a9b;
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 1em;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+}
