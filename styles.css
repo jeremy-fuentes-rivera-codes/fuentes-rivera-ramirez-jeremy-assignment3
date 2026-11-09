@@ -109,6 +109,7 @@ form .error {
     font-size: 0.9em;
     font-weight: bold;
     margin-top: 0.25em;
+    display: none;
 }
 
 button {
