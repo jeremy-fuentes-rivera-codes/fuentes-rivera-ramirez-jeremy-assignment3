@@ -210,10 +210,6 @@ const load = () => {
   let lastName = document.getElementById("lname").value
   let email=document.getElementById("email").value
 
-//  //  Javascript will treat an empty string as 0, 
-//  //  so first we must parse the mark into a number
-//  mark = parseFloat(mark)
-//  if (name != "" && isNaN(mark) == false) {
       displayData(firstName, lastName,email)
 //  }
 
